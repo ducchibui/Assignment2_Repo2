@@ -1,0 +1,5 @@
+com\mycompany\assignment2_rest_api\models\Movie.class
+com\mycompany\assignment2_rest_api\resources\JavaEE8Resource.class
+com\mycompany\assignment2_rest_api\controller\MovieController.class
+com\mycompany\assignment2_rest_api\JAXRSConfiguration.class
+com\mycompany\assignment2_rest_api\services\MovieService.class
