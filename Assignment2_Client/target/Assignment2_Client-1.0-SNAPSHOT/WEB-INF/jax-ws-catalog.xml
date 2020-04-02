@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Assignment2_SOAP_API/ChiMovie?wsdl" uri="wsdl/localhost_8080/Assignment2_SOAP_API/ChiMovie.wsdl"/>
+    <system systemId="http://localhost:8080/Assignment2_SOAP_API/ChiMovie?xsd=1" uri="wsdl/localhost_8080/Assignment2_SOAP_API/ChiMovie.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Assignment2_SOAP_API/MovieService?wsdl" uri="wsdl/localhost_8080/Assignment2_SOAP_API/MovieService.wsdl"/>
+    <system systemId="http://localhost:8080/Assignment2_SOAP_API/MovieService?xsd=1" uri="wsdl/localhost_8080/Assignment2_SOAP_API/MovieService.xsd_1.xsd"/>
+    <system systemId="http://www.w3.org/2005/05/xmlmime" uri="wsdl/www.w3.org/2005/05/xmlmime.xsd"/>
+</catalog>

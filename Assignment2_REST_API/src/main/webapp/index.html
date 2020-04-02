@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>End client movie Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
               integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -26,45 +26,6 @@
                 </table>
             </div>
         </div>
-
-<!--                    <script>
-                        //            var trHTML = '';
-                        fetch('http://localhost:8080/Assignment2_REST_API/resources/movies')
-                                .then(function (response) {
-                                    return response.json();
-                                }).then(function (data) {
-                            for (var i = 0; i < data.length; i++)
-                            {
-        
-                                var movieTr = document.createElement("tr");
-                                var movieTd1 = document.createElement("td");
-                                movieTd1.appendChild(document.createTextNode(data[i].id));
-                                var movieTd2 = document.createElement("td");
-                                movieTd2.appendChild(document.createTextNode(data[i].name));
-                                var movieTd3 = document.createElement("td");
-                                movieTd3.appendChild(document.createTextNode(data[i].description));
-                                var movieTd4 = document.createElement("td");
-                                var movieTd4A = document.createElement("img");
-                                movieTd4.appendChild(movieTd4A);
-        
-                               
-                                movieTd4A.setAttribute("src", "data:image/png;base64," + data[i].data);
-        
-                                movieTd4A.appendChild(document.createTextNode(data[i].description));
-                                movieTr.appendChild(movieTd1);
-                                movieTr.appendChild(movieTd2);
-                                movieTr.appendChild(movieTd3);
-                                movieTr.appendChild(movieTd4);
-        
-        
-                                document.getElementById("productContainer").appendChild(movieTr);
-        
-                            }
-                        });
-        
-                    </script>
-                    <div id ="productContainer"></div>-->
-
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
                 integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

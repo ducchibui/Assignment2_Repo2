@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://services/" xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://services/">
+
+<xs:import namespace="http://www.w3.org/2005/05/xmlmime" schemaLocation="http://www.w3.org/2005/05/xmlmime"/>
+<xs:element name="Exception" type="tns:Exception"/>
+
+<xs:element name="NonexistentEntityException" type="tns:NonexistentEntityException"/>
+
+<xs:element name="deleteMovie" type="tns:deleteMovie"/>
+
+<xs:element name="deleteMovieResponse" type="tns:deleteMovieResponse"/>
+
+<xs:element name="downloadMovie" type="tns:downloadMovie"/>
+
+<xs:element name="downloadMovieResponse" type="tns:downloadMovieResponse"/>
+
+<xs:element name="editMovie" type="tns:editMovie"/>
+
+<xs:element name="editMovieResponse" type="tns:editMovieResponse"/>
+
+<xs:element name="findMovie" type="tns:findMovie"/>
+
+<xs:element name="findMovieResponse" type="tns:findMovieResponse"/>
+
+<xs:element name="getAllMovies" type="tns:getAllMovies"/>
+
+<xs:element name="getAllMoviesResponse" type="tns:getAllMoviesResponse"/>
+
+<xs:element name="movie" type="tns:movie"/>
+
+<xs:element name="uploadMovie" type="tns:uploadMovie"/>
+
+<xs:element name="uploadMovieResponse" type="tns:uploadMovieResponse"/>
+
+<xs:complexType name="editMovie">
+<xs:sequence>
+<xs:element name="arg0" type="tns:movie" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="movie">
+<xs:sequence>
+<xs:element name="data" type="xs:base64Binary" minOccurs="0"/>
+<xs:element name="description" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:int" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editMovieResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="Exception">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMovie">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMovieResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="NonexistentEntityException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findMovie">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="findMovieResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movie" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMovie">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" xmime:expectedContentTypes="application/octet-stream" type="xs:base64Binary" minOccurs="0"/>
+<xs:element name="arg2" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="uploadMovieResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllMovies">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getAllMoviesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:movie" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadMovie">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="downloadMovieResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
